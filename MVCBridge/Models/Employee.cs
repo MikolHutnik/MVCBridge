@@ -6,19 +6,15 @@ using System.Web;
 
 namespace MVCBridge.Models
 {
-    public class Customer
+    public class Employee
     {
         [Key]
-
         public int ID { get; set; }
         public string Name { get; set; }
         public string EMail { get; set; }
-        public int CustomerPhoneNumber { get; set; }
-        public string Drink { get; set; }
-        public string Meal { get; set; }
-        public double LargestBill { get; set; }
-        public virtual ICollection<Adress> Adresses { get; set; }
-
-
+        public int EmployeeNum { get; set; }
+        public string EmergencyContactName { get; set; }
+        public int EmergnencyContactNumber { get; set; }
+        public DateTime EmployeeStartDate { get; set; }
     }
 }
